@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface Game | Virial ">
       
-      <meta name="description" content="現在プレイ中のゲームを表します。">
+      <meta name="description" content="表示当前正在进行的游戏。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   
   </div>
 
-  <div class="markdown summary"><p>現在プレイ中のゲームを表します。</p>
+  <div class="markdown summary"><p>表示当前正在进行的游戏。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -250,8 +250,8 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>自身が操作するプレイヤー。
-即ちこのプレイヤーのPlayer.AmOwnerがtrueであることを意味します。</p>
+  <div class="markdown level1 summary"><p>自身操作的玩家。
+即该玩家的Player.AmOwner为true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -349,7 +349,7 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ゲーム中の全プレイヤーを取得します。</p>
+  <div class="markdown level1 summary"><p>获取游戏中的所有玩家。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -361,7 +361,7 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Virial.Game.Player.html">Player</a>&gt;</dt>
-    <dd><p>ゲーム中の全プレイヤー</p>
+    <dd><p>游戏中的所有玩家</p>
 </dd>
   </dl>
 
@@ -382,7 +382,7 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーを取得します。</p>
+  <div class="markdown level1 summary"><p>获取玩家。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -393,14 +393,14 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
-    <dd><p>プレイヤーのID</p>
+    <dd><p>玩家的ID</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Virial.Game.Player.html">Player</a></dt>
-    <dd><p>IDが一致するプレイヤー 存在しない場合はnull</p>
+    <dd><p>ID匹配的玩家，不存在则为null</p>
 </dd>
   </dl>
 
@@ -421,7 +421,7 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーのような対象を取得します。</p>
+  <div class="markdown level1 summary"><p>获取类似玩家的对象。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -432,14 +432,14 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>playerlikeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>プレイヤーのような対象のID</p>
+    <dd><p>类似玩家的对象的ID</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Virial.Game.IPlayerlike.html">IPlayerlike</a></dt>
-    <dd><p>IDが一致するプレイヤー 存在しない場合はnull</p>
+    <dd><p>ID匹配的玩家，不存在则为null</p>
 </dd>
   </dl>
 
@@ -460,8 +460,8 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ゲーム終了のトリガーをホストに依頼します。
-終了理由は<a class="xref" href="Virial.Game.GameEndReason.html#Virial_Game_GameEndReason_Special">Special</a>として扱われます。</p>
+  <div class="markdown level1 summary"><p>向主机请求触发游戏结束。
+结束理由将作为<a class="xref" href="Virial.Game.GameEndReason.html#Virial_Game_GameEndReason_Special">Special</a>处理。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -495,8 +495,8 @@ Interface Game  <a class="header-action link-secondary" title="View source" href
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Game.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ゲーム終了をトリガーします。
-この操作はホストのみ有効です。</p>
+  <div class="markdown level1 summary"><p>触发游戏结束。
+此操作仅主机有效。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

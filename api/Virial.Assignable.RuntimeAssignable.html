@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface RuntimeAssignable | Virial ">
       
-      <meta name="description" content="役職実体です。 プレイヤーに実際に割り当てられた役職やモディファイアのコンテナです。">
+      <meta name="description" content="职业实体。是实际分配给玩家的职业或修改器的容器。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,8 +97,8 @@ Interface RuntimeAssignable  <a class="header-action link-secondary" title="View
   
   </div>
 
-  <div class="markdown summary"><p>役職実体です。
-プレイヤーに実際に割り当てられた役職やモディファイアのコンテナです。</p>
+  <div class="markdown summary"><p>职业实体。
+是实际分配给玩家的职业或修改器的容器。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -167,7 +167,7 @@ Interface RuntimeAssignable  <a class="header-action link-secondary" title="View
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L632"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職定義。</p>
+  <div class="markdown level1 summary"><p>职业定义。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -199,8 +199,8 @@ Interface RuntimeAssignable  <a class="header-action link-secondary" title="View
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L682"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ヘルプ画面上での表示に使用する役職です。
-CanBeAwareAssignmentがfalseの場合、この値は使用されません。</p>
+  <div class="markdown level1 summary"><p>用于在帮助画面上显示的职业。
+如果CanBeAwareAssignment为false，则不使用此值。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -232,7 +232,7 @@ CanBeAwareAssignmentがfalseの場合、この値は使用されません。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L651"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>割り当てられていることを自覚できる場合trueを返します。</p>
+  <div class="markdown level1 summary"><p>如果能够意识到自己被分配则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -264,7 +264,7 @@ CanBeAwareAssignmentがfalseの場合、この値は使用されません。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L687"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>緊急ボタンを押すことができる場合trueを返します。</p>
+  <div class="markdown level1 summary"><p>如果可以按下紧急按钮则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -297,7 +297,7 @@ bool CanCallEmergencyMeeting { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>通信障害を修理できる場合trueを返します。</p>
+  <div class="markdown level1 summary"><p>如果可以修复通信故障则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -330,7 +330,7 @@ bool CanFixComm { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L645"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>通信障害を修理できる場合trueを返します。</p>
+  <div class="markdown level1 summary"><p>如果可以修复通信故障则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -363,7 +363,7 @@ bool CanFixLight { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L693"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>通報できる場合trueを返します。</p>
+  <div class="markdown level1 summary"><p>如果可以通报则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -396,7 +396,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L712"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職の表示名です。リッチテキストタグを用いて色を付けています。特に指定しない場合、役職定義の表示名をそのまま使用します。</p>
+  <div class="markdown level1 summary"><p>职业的显示名称。使用富文本标签添加颜色。未特别指定时，直接使用职业定义的显示名称。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -428,7 +428,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職の表示名です。特に指定しない場合、役職定義の表示名をそのまま使用します。</p>
+  <div class="markdown level1 summary"><p>职业的显示名称。未特别指定时，直接使用职业定义的显示名称。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -460,7 +460,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>クルーメイトタスクを持っていた場合、明示的に無効化する場合はtrue</p>
+  <div class="markdown level1 summary"><p>如果拥有船员任务，明确禁用时返回true</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -492,7 +492,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L663"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>自身の能力が追加するアビリティを取得します。</p>
+  <div class="markdown level1 summary"><p>获取自身能力添加的技能。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -524,7 +524,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L758"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>クルーメイトタスクを持っていたとしても、クルーメイトタスクの総数に計上されない場合はtrue</p>
+  <div class="markdown level1 summary"><p>即使拥有船员任务，也不计入船员任务总数时返回true</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -556,7 +556,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L656"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職定義で定めた役職アイコンを上書きする場合は上書きする画像を返します。</p>
+  <div class="markdown level1 summary"><p>若要覆盖职业定义中设定的职业图标，则返回要覆盖的图像。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -588,8 +588,8 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L764"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>進捗を表示するGUIウィジェットを返します。
-既に死亡し、ネタバレに寛容なプレイヤーのみ閲覧できます。</p>
+  <div class="markdown level1 summary"><p>返回显示进度的GUI控件。
+仅限已死亡且对剧透宽容的玩家可以查看。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -621,7 +621,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L717"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>割り当てのパラメータを取得します。</p>
+  <div class="markdown level1 summary"><p>获取分配的参数。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -657,7 +657,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L748"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーをキルできるか調べます。</p>
+  <div class="markdown level1 summary"><p>检查是否能击杀玩家。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -694,8 +694,8 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L741"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>名前のテキストを恒常的に書き換えます。
-状態に依らない書き換えが推奨されます。</p>
+  <div class="markdown level1 summary"><p>持续重写名称文本。
+建议进行不依赖状态的重写。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -729,7 +729,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L672"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>アビリティを取得します。</p>
+  <div class="markdown level1 summary"><p>获取能力。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -766,7 +766,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L722"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職の割り当て時に呼び出されます。</p>
+  <div class="markdown level1 summary"><p>在分配职业时调用。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -793,7 +793,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職が失わる時に呼び出されます。</p>
+  <div class="markdown level1 summary"><p>在职业失效时调用。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -820,7 +820,7 @@ bool CanReport { get; }</code></pre>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L703"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職が、元の役職名を書き換える場合に呼び出されます。</p>
+  <div class="markdown level1 summary"><p>在职业需要重写原职业名称时调用。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

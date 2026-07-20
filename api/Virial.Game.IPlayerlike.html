@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IPlayerlike | Virial ">
       
-      <meta name="description" content="プレイヤーのような対象を表します。">
+      <meta name="description" content="表示类似玩家的对象。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Interface IPlayerlike  <a class="header-action link-secondary" title="View sourc
   
   </div>
 
-  <div class="markdown summary"><p>プレイヤーのような対象を表します。</p>
+  <div class="markdown summary"><p>表示类似玩家的对象。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -176,7 +176,7 @@ Interface IPlayerlike  <a class="header-action link-secondary" title="View sourc
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>全てのプレイヤーのような対象を取得します。</p>
+  <div class="markdown level1 summary"><p>获取所有类似玩家的对象。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -208,8 +208,8 @@ Interface IPlayerlike  <a class="header-action link-secondary" title="View sourc
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>自身が主たる操作主であればtrueを返します。
-Playerでない限り、falseを返します。</p>
+  <div class="markdown level1 summary"><p>如果自身是主要操作者则返回true。
+除非是Player，否则返回false。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -241,7 +241,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>このオブジェクトの管理主であればtrueを返します。</p>
+  <div class="markdown level1 summary"><p>如果此对象的管理者则返回true。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -273,8 +273,8 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>インタラクトの対象になりうるかを返します。
-このプロパティはプレイヤーの可視性などを考慮しません。</p>
+  <div class="markdown level1 summary"><p>返回是否可以成为交互对象。
+此属性不考虑玩家的可见性等。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -337,7 +337,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーの現在の見た目を取得します。</p>
+  <div class="markdown level1 summary"><p>获取玩家当前的外观。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -369,7 +369,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>オブジェクトが有効なとき、Trueを返します。</p>
+  <div class="markdown level1 summary"><p>当对象有效时返回True。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -432,7 +432,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>吹き飛ばされているとき、Trueを返します。</p>
+  <div class="markdown level1 summary"><p>当被吹飞时返回True。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -454,7 +454,7 @@ Playerでない限り、falseを返します。</p>
 
 
   <h4 class="section" id="Virial_Game_IPlayerlike_IsBlown_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>v3.3.0でPlayerからIPlayerlikeに移動。<br></p>
+  <div class="markdown level1 remarks"><p>v3.3.0从Player移动到IPlayerlike。<br></p>
 </div>
 
 
@@ -467,7 +467,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>死亡しているとき、Trueを返します。</p>
+  <div class="markdown level1 summary"><p>死亡时返回True。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -499,7 +499,7 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ダイブしているとき、Trueを返します。</p>
+  <div class="markdown level1 summary"><p>当潜水时返回True。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -521,7 +521,7 @@ Playerでない限り、falseを返します。</p>
 
 
   <h4 class="section" id="Virial_Game_IPlayerlike_IsDived_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>v3.3.0でPlayerからIPlayerlikeに移動。<br></p>
+  <div class="markdown level1 remarks"><p>v3.3.0从Player移动到IPlayerlike。<br></p>
 </div>
 
 
@@ -534,8 +534,8 @@ Playerでない限り、falseを返します。</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーが不可視なとき、Trueを返します。
-ローカルのプレイヤーから見た可視性を表します。</p>
+  <div class="markdown level1 summary"><p>当玩家不可见时返回True。
+表示从本地玩家视角的可见性。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -557,8 +557,8 @@ Playerでない限り、falseを返します。</p>
 
 
   <h4 class="section" id="Virial_Game_IPlayerlike_IsInvisible_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>v3.3.0でPlayerからIPlayerlikeに移動。<br>
-v3.1.0で追加。<br></p>
+  <div class="markdown level1 remarks"><p>v3.3.0从Player移动到IPlayerlike。<br>
+v3.1.0添加。<br></p>
 </div>
 
 
@@ -571,7 +571,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>テレポート中、Trueを返します。</p>
+  <div class="markdown level1 summary"><p>传送中时返回True。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -593,7 +593,7 @@ v3.1.0で追加。<br></p>
 
 
   <h4 class="section" id="Virial_Game_IPlayerlike_IsTeleporting_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>v3.3.0でPlayerからIPlayerlikeに移動。<br></p>
+  <div class="markdown level1 remarks"><p>v3.3.0从Player移动到IPlayerlike。<br></p>
 </div>
 
 
@@ -606,7 +606,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>キルの特性を表します。</p>
+  <div class="markdown level1 summary"><p>表示击杀特性。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -638,7 +638,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーの名前を返します。</p>
+  <div class="markdown level1 summary"><p>返回玩家的名字。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -670,8 +670,8 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーのような対象としての一意なIDを返します。
-実際のプレイヤーの場合はプレイヤーIDと一致します。</p>
+  <div class="markdown level1 summary"><p>返回作为类似玩家的对象的唯一ID。
+如果是真实玩家，则与玩家ID一致。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -703,7 +703,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>紐づくプレイヤーを表します。</p>
+  <div class="markdown level1 summary"><p>表示关联的玩家。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -735,7 +735,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーの足元の位置を返します。</p>
+  <div class="markdown level1 summary"><p>返回玩家脚下的位置。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -767,8 +767,8 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>死が確定しているとき、Trueを返します。
-死亡していても、Trueを返さないときがあります。IsDeadと併用して使用する必要があります。</p>
+  <div class="markdown level1 summary"><p>当死亡已确定时返回True。
+即使已死亡，有时也不会返回True。需要与IsDead结合使用。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -790,7 +790,7 @@ v3.1.0で追加。<br></p>
 
 
   <h4 class="section" id="Virial_Game_IPlayerlike_WillDie_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>v3.3.0でPlayerからIPlayerlikeに移動。<br></p>
+  <div class="markdown level1 remarks"><p>v3.3.0从Player移动到IPlayerlike。<br></p>
 </div>
 
 
@@ -807,7 +807,7 @@ v3.1.0で追加。<br></p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Game/Playerlike.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>プレイヤーのような対象を取得します。</p>
+  <div class="markdown level1 summary"><p>获取类似玩家的对象。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -818,7 +818,7 @@ v3.1.0で追加。<br></p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>playerlikeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>プレイヤーID</p>
+    <dd><p>玩家ID</p>
 </dd>
   </dl>
 

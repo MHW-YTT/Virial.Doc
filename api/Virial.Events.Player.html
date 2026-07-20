@@ -96,23 +96,23 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html">AbstractPlayerEvent</a></dt>
-      <dd><p>プレイヤーの関するイベントを表します。
-<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>を実装する作用素では、<a class="xref" href="Virial.Attributes.OnlyMyPlayer.html">OnlyMyPlayer</a>属性を付すと自身のプレイヤ―に関するイベントに限って発火させられます。</p>
+      <dd><p>表示与玩家相关的事件。
+实现<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>的运算符中，附加<a class="xref" href="Virial.Attributes.OnlyMyPlayer.html">OnlyMyPlayer</a>属性后，仅会触发与自身玩家相关的事件。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.AbstractPlayerlikeEvent.html">AbstractPlayerlikeEvent</a></dt>
-      <dd><p>プレイヤーのようなオブジェクトに関するイベントを表します。</p>
+      <dd><p>表示与类玩家对象相关的事件。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerAlphaUpdateEvent.html">PlayerAlphaUpdateEvent</a></dt>
-      <dd><p>プレイヤーの透明度が更新されるときに発火します。</p>
+      <dd><p>在玩家透明度更新时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerBeginMinigameByConsoleLocalEvent.html">PlayerBeginMinigameByConsoleLocalEvent</a></dt>
-      <dd><p>プレイヤーがミニゲームコンソールを使用して開くときに呼び出されます。</p>
+      <dd><p>在玩家使用小游戏控制台打开时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -125,19 +125,19 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerCheckCanKillLocalEvent.html">PlayerCheckCanKillLocalEvent</a></dt>
-      <dd><p>キルできる相手かどうか調べます。</p>
+      <dd><p>检查是否为可以击杀的对象。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerCheckKilledEvent.html">PlayerCheckKilledEvent</a></dt>
-      <dd><p>キルによってプレイヤーが死亡する際に発火します。プレイヤーが実際に死亡しない場合(偽物が死亡する場合など)は呼び出されません。
-このイベントはキラーのクライアント上でのみ発火します。
-計算のために必要な値はあらかじめ共有しておく必要があり、値の更新がある場合は更新も共有する必要があります。</p>
+      <dd><p>在玩家因击杀而死亡时触发。如果玩家实际上未死亡（如假人死亡等情况）则不会调用。
+此事件仅在杀手的客户端上触发。
+计算所需的值需要事先共享，如果有值更新，也需要共享更新。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerCheckPlayFootSoundEvent.html">PlayerCheckPlayFootSoundEvent</a></dt>
-      <dd><p>足跡を再生しようとするときに発火します。足跡の再生を拒否できます。</p>
+      <dd><p>在尝试播放脚步声时触发。可以拒绝播放脚步声。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -146,8 +146,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerCheckWinEvent.html">PlayerCheckWinEvent</a></dt>
-      <dd><p>プレイヤーが勝利しているかどうか判定します。
-このイベントはホストでのみ実行されます。<a class="xref" href="Virial.Attributes.Local.html">Local</a>を指定すると意図せぬ挙動をする恐れがあります。</p>
+      <dd><p>判断玩家是否胜利。
+此事件仅在主机上执行。指定<a class="xref" href="Virial.Attributes.Local.html">Local</a>可能导致意外行为。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -164,7 +164,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerDisconnectEvent.html">PlayerDisconnectEvent</a></dt>
-      <dd><p>プレイヤーが切断したときに呼び出されます。</p>
+      <dd><p>在玩家断开连接时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -173,8 +173,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerExiledEvent.html">PlayerExiledEvent</a></dt>
-      <dd><p>プレイヤーの追放時に呼び出されます。
-このとき、追加追放者を設定することができます。</p>
+      <dd><p>在玩家被驱逐时调用。
+此时，可以设置额外的被驱逐者。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -199,7 +199,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerInteractionFailedForMyFakePlayerEvent.html">PlayerInteractionFailedForMyFakePlayerEvent</a></dt>
-      <dd><p>誰かが自身が所有する偽のプレイヤーに失敗したインタラクトをすると発火します。</p>
+      <dd><p>当有人对自身拥有的假玩家进行失败的交互时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -216,7 +216,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerModifierSetEvent.html">PlayerModifierSetEvent</a></dt>
-      <dd><p>モディファイアが追加された直後に呼び出されます。</p>
+      <dd><p>在Modifier添加后立即调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -237,7 +237,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerRoleSwapEvent.html">PlayerRoleSwapEvent</a></dt>
-      <dd><p>PlayerRoleSetEventが発火するタイミングとの関係は未定義です。</p>
+      <dd><p>与PlayerRoleSetEvent触发时机的关系未定义。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -278,8 +278,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Player.PlayerUpdateCrewRecognitionEvent.html">PlayerUpdateCrewRecognitionEvent</a></dt>
-      <dd><p>プレイヤーの陣営認識が更新されうるときに発火します。
-まったく変化していない場合もあります。</p>
+      <dd><p>当玩家的阵营认知可能更新时触发。
+也可能完全没有变化。</p>
 </dd>
     </dl>
     <dl class="jumplist">

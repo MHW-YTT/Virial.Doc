@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MeetingTieVoteHostEvent | Virial ">
       
-      <meta name="description" content="タイ投票が発生したときに発火します。 追加票を投じさせられます。追加票を投じた後の投票結果がタイ投票であっても、このイベントは発火しません。">
+      <meta name="description" content="平局投票发生时触发。允许投附加票。即使投附加票后的投票结果仍是平局，此事件也不会再次触发。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,8 +97,8 @@ Class MeetingTieVoteHostEvent  <a class="header-action link-secondary" title="Vi
   
   </div>
 
-  <div class="markdown summary"><p>タイ投票が発生したときに発火します。
-追加票を投じさせられます。追加票を投じた後の投票結果がタイ投票であっても、このイベントは発火しません。</p>
+  <div class="markdown summary"><p>平局投票发生时触发。
+允许投附加票。即使投附加票后的投票结果仍是平局，此事件也不会再次触发。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -162,7 +162,7 @@ Class MeetingTieVoteHostEvent  <a class="header-action link-secondary" title="Vi
 
 
   <h2 id="Virial_Events_Game_Meeting_MeetingTieVoteHostEvent_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>このイベントはホストでのみ発火します。</p>
+  <div class="markdown level0 remarks"><p>此事件仅在主机上触发。</p>
 </div>
 
 
@@ -177,7 +177,7 @@ Class MeetingTieVoteHostEvent  <a class="header-action link-secondary" title="Vi
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/Meeting/MeetingTieVoteHostEvent.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>追加票を投じます。</p>
+  <div class="markdown level1 summary"><p>投出附加票。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -209,7 +209,7 @@ Class MeetingTieVoteHostEvent  <a class="header-action link-secondary" title="Vi
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/Meeting/MeetingTieVoteHostEvent.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>投票者の投票先を取得します。</p>
+  <div class="markdown level1 summary"><p>获取投票者的投票对象。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -223,14 +223,14 @@ Class MeetingTieVoteHostEvent  <a class="header-action link-secondary" title="Vi
     <dd><p>投票者</p>
 </dd>
     <dt><code>votedFor</code> <a class="xref" href="Virial.Game.Player.html">Player</a></dt>
-    <dd><p>投票先がある場合、投票先。スキップ票及び白票の場合は<code>null</code></p>
+    <dd><p>有投票对象时，返回投票对象。跳投票和弃权票时为<code>null</code></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>票を投じている場合、true</p>
+    <dd><p>已投票时返回 true</p>
 </dd>
   </dl>
 

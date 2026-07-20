@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface ICategorizedRoleAllocator&lt;R&gt; | Virial ">
       
-      <meta name="description" content="役職割り当て器です。 該当の役職が何度割り当てられたか記憶し、都度適切な割り当て確率を返します。">
+      <meta name="description" content="职业分配器。会记录该职业被分配的次数，每次返回适当的分配概率。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,8 +97,8 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   
   </div>
 
-  <div class="markdown summary"><p>役職割り当て器です。
-該当の役職が何度割り当てられたか記憶し、都度適切な割り当て確率を返します。</p>
+  <div class="markdown level1 summary"><p>职业分配器。
+会记录该职业被分配的次数，每次返回适当的分配概率。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -141,7 +141,7 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>自身の役職です。</p>
+  <div class="markdown level1 summary"><p>自己的职业。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -177,8 +177,8 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>役職を割り当てます。
-このメソッドの呼び出しによって今後、割り当て確率が変化する可能性があります。</p>
+  <div class="markdown level1 summary"><p>分配职业。
+调用此方法后，分配概率可能会发生变化。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -189,7 +189,7 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>category</code> <a class="xref" href="Virial.Assignable.RoleCategory.html">RoleCategory</a></dt>
-    <dd><p>割り当てカテゴリ。</p>
+    <dd><p>分配类别。</p>
 </dd>
   </dl>
 
@@ -211,7 +211,7 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Assignable/Role.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>割り当て確率を0～100の間で返します。</p>
+  <div class="markdown level1 summary"><p>返回分配概率，范围为0～100。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -222,7 +222,7 @@ Interface ICategorizedRoleAllocator&lt;R&gt;  <a class="header-action link-secon
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>category</code> <a class="xref" href="Virial.Assignable.RoleCategory.html">RoleCategory</a></dt>
-    <dd><p>割り当てカテゴリ。</p>
+    <dd><p>分配类别。</p>
 </dd>
   </dl>
 

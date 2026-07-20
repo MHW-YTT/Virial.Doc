@@ -126,35 +126,35 @@ public enum KillCharacteristics</code></pre>
   <dl class="parameters">
     <dt id="Virial_Game_KillCharacteristics_Disappear"><code>Disappear = 0</code></dt>
   
-  <dd><p>キルされそうになると煙になって消滅します。</p>
+  <dd><p>即将被击杀时会化作烟雾消失。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_FlagKillRealPlayer"><code>FlagKillRealPlayer = 2</code></dt>
   
-  <dd><p>実際のプレイヤーをキルします。</p>
+  <dd><p>击杀真实玩家。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_FlagLeftDeadBody"><code>FlagLeftDeadBody = 4</code></dt>
   
-  <dd><p>足元に死体を発生させます。
-死体を残さないキルであればこのフラグは無視されます。</p>
+  <dd><p>在脚下生成尸体。
+如果不留下尸体的击杀则忽略此标志。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_FlagLeftRealDeadBody"><code>FlagLeftRealDeadBody = 8</code></dt>
   
-  <dd><p>実際のプレイヤーの足元に死体を発生させます。
-死体を残さないキルであればこのフラグは無視されます。</p>
+  <dd><p>在真实玩家脚下生成尸体。
+如果不留下尸体的击杀则忽略此标志。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_KillAllAndLeaveBodyAll"><code>KillAllAndLeaveBodyAll = KillAllAndLeaveBodyOne | FlagLeftRealDeadBody</code></dt>
   
-  <dd><p>自身と本体もろとも死亡し、全て死体を発生させます。
-死体を発生させないキルであれば死体は発生しません。</p>
+  <dd><p>自身和本体一同死亡，全部生成尸体。
+如果不生成尸体的击杀则不会生成尸体。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_KillAllAndLeaveBodyOne"><code>KillAllAndLeaveBodyOne = FlagKillRealPlayer | FlagLeftDeadBody</code></dt>
   
-  <dd><p>自身と本体もろとも死亡し、死体は自身の元にのみ残します。
-死体を発生させないキルであれば死体は発生しません。</p>
+  <dd><p>自身和本体一同死亡，尸体仅留在自身位置。
+如果不生成尸体的击杀则不会生成尸体。</p>
 </dd>
     <dt id="Virial_Game_KillCharacteristics_KillOne"><code>KillOne = 4</code></dt>
   
-  <dd><p>自身が死体になります。自身が本体でない限り本体は死亡しません。</p>
+  <dd><p>自身变成尸体。只要自身不是本体，本体不会死亡。</p>
 </dd>
   </dl>
 

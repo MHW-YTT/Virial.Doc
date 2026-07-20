@@ -134,7 +134,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Command/Command.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>入力中の文字を補完する候補を返します。</p>
+  <div class="markdown level1 summary"><p>返回补全输入中的字符的候选。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -151,7 +151,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
     <dt><code>last</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>executor</code> <a class="xref" href="Virial.Command.ICommandExecutor.html">ICommandExecutor</a></dt>
-    <dd><p>予見されるコマンドの実行者</p>
+    <dd><p>预期命令的执行者</p>
 </dd>
   </dl>
 
@@ -178,7 +178,7 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Command/Command.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>コマンドを実行します。</p>
+  <div class="markdown level1 summary"><p>执行命令。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -189,10 +189,10 @@ Interface ICommand  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>コマンド実行時のコマンド名</p>
+    <dd><p>命令执行时的命令名</p>
 </dd>
     <dt><code>arguments</code> <a class="xref" href="Virial.Compat.IReadOnlyArray-1.html">IReadOnlyArray</a>&lt;<a class="xref" href="Virial.Command.ICommandToken.html">ICommandToken</a>&gt;</dt>
-    <dd><p>与えられた引数</p>
+    <dd><p>给定的参数</p>
 </dd>
     <dt><code>env</code> <a class="xref" href="Virial.Command.CommandEnvironment.html">CommandEnvironment</a></dt>
     <dd></dd>

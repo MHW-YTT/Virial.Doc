@@ -96,24 +96,24 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.AbstractGameEvent.html">AbstractGameEvent</a></dt>
-      <dd><p>ゲームに関するイベントを表します。</p>
+      <dd><p>表示与游戏相关的事件。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.CameraUpdateEvent.html">CameraUpdateEvent</a></dt>
-      <dd><p>カメラが更新される際に呼び出されます。
-カメラの色調を変更できます。</p>
+      <dd><p>在相机更新时调用。
+可以更改相机的色调。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.DeadBodyInstantiateEvent.html">DeadBodyInstantiateEvent</a></dt>
-      <dd><p>死体が生成されるときに呼び出されます。</p>
+      <dd><p>在生成尸体时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.EndCriteriaMetEvent.html">EndCriteriaMetEvent</a></dt>
-      <dd><p>ゲーム終了が決定したときに呼び出されます。
-ゲーム終了理由を書き換えられます。</p>
+      <dd><p>在确定游戏结束时调用。
+可以改写游戏结束原因。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -122,30 +122,30 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameEndEvent.html">GameEndEvent</a></dt>
-      <dd><p>ゲーム終了時に発火します。</p>
+      <dd><p>游戏结束时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameHudUpdateEvent.html">GameHudUpdateEvent</a></dt>
-      <dd><p>ゲームのHUDを更新する際に発火します。
-ここでプレイヤーの輪郭を変更すると、変更が画面に正しく反映されます。</p>
+      <dd><p>在更新游戏HUD时触发。
+在此处更改玩家轮廓，更改将正确反映在画面上。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameHudUpdateFasterEvent.html">GameHudUpdateFasterEvent</a></dt>
-      <dd><p>このイベントの使用は推奨されません。
-<a class="xref" href="Virial.Events.Game.GameHudUpdateEvent.html">GameHudUpdateEvent</a>を使用し、<a class="xref" href="Virial.Attributes.EventPriority.html">EventPriority</a>属性でより高い優先度を設定してください。</p>
+      <dd><p>不建议使用此事件。
+请使用<a class="xref" href="Virial.Events.Game.GameHudUpdateEvent.html">GameHudUpdateEvent</a>，并通过<a class="xref" href="Virial.Attributes.EventPriority.html">EventPriority</a>属性设置更高的优先级。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameHudUpdateLaterEvent.html">GameHudUpdateLaterEvent</a></dt>
-      <dd><p>このイベントの使用は推奨されません。
-<a class="xref" href="Virial.Events.Game.GameHudUpdateEvent.html">GameHudUpdateEvent</a>を使用し、<a class="xref" href="Virial.Attributes.EventPriority.html">EventPriority</a>属性でより低い優先度を設定してください。</p>
+      <dd><p>不建议使用此事件。
+请使用<a class="xref" href="Virial.Events.Game.GameHudUpdateEvent.html">GameHudUpdateEvent</a>，并通过<a class="xref" href="Virial.Attributes.EventPriority.html">EventPriority</a>属性设置更低的优先级。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameLateUpdateEvent.html">GameLateUpdateEvent</a></dt>
-      <dd><p>LateUpdateのタイミングで発火します。</p>
+      <dd><p>在LateUpdate时机触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -154,37 +154,37 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameStartEvent.html">GameStartEvent</a></dt>
-      <dd><p>ゲーム開始時に発火します。</p>
+      <dd><p>游戏开始时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.GameUpdateEvent.html">GameUpdateEvent</a></dt>
-      <dd><p>ゲーム中に毎ティック発火します。</p>
+      <dd><p>游戏中每个tick触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.KillerTeamCallback.html">KillerTeamCallback</a></dt>
-      <dd><p>特定の陣営を除いたキル陣営が生き残っているかどうかの問いに答えます。</p>
+      <dd><p>回答关于排除特定阵营后，杀手阵营是否仍然存活的询问。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.LightRangeUpdateEvent.html">LightRangeUpdateEvent</a></dt>
-      <dd><p>視界の広さを更新する際に発火します。</p>
+      <dd><p>在更新视野范围时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.TaskPhaseRestartEvent.html">TaskPhaseRestartEvent</a></dt>
-      <dd><p>タスクフェイズが再開するときに発火します。</p>
+      <dd><p>在任务阶段恢复时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.TaskPhaseStartEvent.html">TaskPhaseStartEvent</a></dt>
-      <dd><p>タスクフェイズが開始あるいは再開するときに発火します。</p>
+      <dd><p>在任务阶段开始或恢复时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.UpdateEvent.html">UpdateEvent</a></dt>
-      <dd><p>毎ティック発火します。</p>
+      <dd><p>每个tick触发。</p>
 </dd>
     </dl>
 

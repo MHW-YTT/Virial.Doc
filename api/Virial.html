@@ -96,23 +96,23 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.BitMasks.html">BitMasks</a></dt>
-      <dd><p>ビットマスクを生成するAPI群です。</p>
+      <dd><p>生成位掩码的API群。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.DependentLifespan.html">DependentLifespan</a></dt>
-      <dd><p>他の寿命オブジェクトにキルのタイミングを委ねる寿命オブジェクトです。
-委ねる寿命オブジェクトを注入されるまでは少なくとも生存します。</p>
+      <dd><p>将终止时机委托给其他生命周期对象的生命周期对象。
+在被注入委托的生命周期对象之前至少保持存活。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.FlexibleLifespan.html">FlexibleLifespan</a></dt>
-      <dd><p>注入された寿命オブジェクトの寿命が尽きるか、Release操作によってキルできます。</p>
+      <dd><p>可以在注入的生命周期对象到期或通过Release操作终止。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.FunctionalLifespan.html">FunctionalLifespan</a></dt>
-      <dd><p>関数によって定義される寿命付きオブジェクトです。</p>
+      <dd><p>由函数定义的生命周期对象。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -129,8 +129,8 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.SimpleLifespan.html">SimpleLifespan</a></dt>
-      <dd><p>ごく単純な寿命オブジェクトを表します。
-Release操作によってのみキルできます。</p>
+      <dd><p>表示一个非常简单的生命周期对象。
+只能通过Release操作终止。</p>
 </dd>
     </dl>
     <h3 id="structs">
@@ -145,13 +145,13 @@ Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.BitMask-1.html">BitMask&lt;T&gt;</a></dt>
-      <dd><p>部分集合を表すマスクです。</p>
+      <dd><p>表示子集的掩码。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.EditableBitMask-1.html">EditableBitMask&lt;T&gt;</a></dt>
-      <dd><p>編集可能なマスクです。
-要素を追加する操作が可能です。</p>
+      <dd><p>可编辑的掩码。
+可以添加元素。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -164,7 +164,7 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.ILifespan.html">ILifespan</a></dt>
-      <dd><p>寿命オブジェクトを表します。</p>
+      <dd><p>表示生命周期对象。</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -173,13 +173,13 @@ Interfaces
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.INestedLifespan.html">INestedLifespan</a></dt>
-      <dd><p>入れ子状になった寿命オブジェクトを表します。</p>
+      <dd><p>表示嵌套的生命周期对象。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.IReleasable.html">IReleasable</a></dt>
-      <dd><p>任意のタイミングで解放できるオブジェクトを表します。
-能動的に寿命が切れる寿命オブジェクトが実装すべきインターフェースです。</p>
+      <dd><p>表示可以在任意时机释放的对象。
+是能够主动终止生命周期的对象应实现的接口。</p>
 </dd>
     </dl>
 

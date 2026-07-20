@@ -96,54 +96,54 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.AddonDocumentAttribute.html">AddonDocumentAttribute</a></dt>
-      <dd><p>ID付きドキュメントを表すクラスです。</p>
+      <dd><p>表示带有ID的文档的类。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.EventPriority.html">EventPriority</a></dt>
-      <dd><p>リスナに優先度を設定します。デフォルトの優先度は0で、値が大きいほど優先して実行されます。</p>
+      <dd><p>为监听器设置优先级。默认优先级为0，值越大优先级越高，越先执行。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.Local.html">Local</a></dt>
-      <dd><p>ローカルでのみ呼び出される手続きを表します。
-<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>を実装するクラスで定義したリスナで<a class="xref" href="Virial.Game.IBindPlayer.html#Virial_Game_IBindPlayer_AmOwner">AmOwner</a>がtrueの場合のみ実行されます。</p>
+      <dd><p>表示仅在本地调用的过程。
+仅在实现<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>的类中定义的监听器且<a class="xref" href="Virial.Game.IBindPlayer.html#Virial_Game_IBindPlayer_AmOwner">AmOwner</a>为true时执行。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.NebulaPreprocess.html">NebulaPreprocess</a></dt>
-      <dd><p>プリプロセスメソッドを実装しているクラスにこの属性を付加します。
-静的な公開メソッドPreprocess(INebulaPreprocessor)を実装していると記述された処理が実行されます。
-そうでない場合でも静的コンストラクタが走ります。</p>
+      <dd><p>将此属性附加到实现了预处理方法的类。
+如果实现了静态公开方法Preprocess(INebulaPreprocessor)，则描述的处理将被执行。
+否则，静态构造函数也会运行。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.NebulaRPC.html">NebulaRPC</a></dt>
-      <dd><p>メソッド呼び出しをRPC呼び出しに置き換える属性です。</p>
+      <dd><p>将方法调用替换为RPC调用的属性。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.OnlyHost.html">OnlyHost</a></dt>
-      <dd><p>ホストでのみ呼び出される手続きを表します。</p>
+      <dd><p>表示仅在主机上调用的过程。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.OnlyLocalPlayer.html">OnlyLocalPlayer</a></dt>
-      <dd><p>GameOperatorに付与できる属性です。
-イベントが<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html">AbstractPlayerEvent</a>を継承している場合にのみ使用できます。
-イベントの<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html#Virial_Events_Player_AbstractPlayerEvent_Player">Player</a>の<a class="xref" href="Virial.Game.IPlayerlike.html#Virial_Game_IPlayerlike_AmOwner">AmOwner</a>がtrueの場合のみ実行されます。</p>
+      <dd><p>可附加到GameOperator的属性。
+仅在事件继承自<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html">AbstractPlayerEvent</a>时可用。
+仅当事件的<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html#Virial_Events_Player_AbstractPlayerEvent_Player">Player</a>的<a class="xref" href="Virial.Game.IPlayerlike.html#Virial_Game_IPlayerlike_AmOwner">AmOwner</a>为true时执行。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.OnlyMyPlayer.html">OnlyMyPlayer</a></dt>
-      <dd><p>GameOperatorに付与できる属性です。
-<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>を実装するクラスで定義したリスナでイベントが<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html">AbstractPlayerEvent</a>を継承している場合にのみ使用できます。
-<a class="xref" href="Virial.Game.IBindPlayer.html#Virial_Game_IBindPlayer_MyPlayer">MyPlayer</a>とイベントの<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html#Virial_Events_Player_AbstractPlayerEvent_Player">Player</a>が一致する場合のみ実行されます。</p>
+      <dd><p>可附加到GameOperator的属性。
+仅在实现<a class="xref" href="Virial.Game.IBindPlayer.html">IBindPlayer</a>的类中定义的监听器且事件继承自<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html">AbstractPlayerEvent</a>时可用。
+仅在<a class="xref" href="Virial.Game.IBindPlayer.html#Virial_Game_IBindPlayer_MyPlayer">MyPlayer</a>与事件的<a class="xref" href="Virial.Events.Player.AbstractPlayerEvent.html#Virial_Events_Player_AbstractPlayerEvent_Player">Player</a>一致时执行。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Attributes.RequiringHandshake.html">RequiringHandshake</a></dt>
-      <dd><p>呼び出しによってハンドシェイクが求められるメソッドであることを示す属性です。</p>
+      <dd><p>表示该方法需要通过握手来确认调用的属性。</p>
 </dd>
     </dl>
     <h3 id="enums">

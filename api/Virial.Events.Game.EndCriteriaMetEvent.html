@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class EndCriteriaMetEvent | Virial ">
       
-      <meta name="description" content="ゲーム終了が決定したときに呼び出されます。 ゲーム終了理由を書き換えられます。">
+      <meta name="description" content="在游戏结束已决定时调用。 可以重写游戏结束理由。">
       <link rel="icon" href="../images/icon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,8 +97,8 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   
   </div>
 
-  <div class="markdown summary"><p>ゲーム終了が決定したときに呼び出されます。
-ゲーム終了理由を書き換えられます。</p>
+  <div class="markdown summary"><p>在游戏结束已决定时调用。
+可以重写游戏结束理由。</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -162,7 +162,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
 
 
   <h2 id="Virial_Events_Game_EndCriteriaMetEvent_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>ホストでのみ発火します。</p>
+  <div class="markdown level0 remarks"><p>仅在主机触发。</p>
 </div>
 
 
@@ -177,7 +177,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>終了条件を満たした理由。</p>
+  <div class="markdown level1 summary"><p>满足结束条件的理由。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -209,7 +209,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>終了条件を満たしたエンディング。</p>
+  <div class="markdown level1 summary"><p>满足结束条件的结局。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -241,7 +241,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>書き換え前の勝者。</p>
+  <div class="markdown level1 summary"><p>重写前的胜者。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -273,7 +273,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ゲーム終了理由が上書きされた場合は<code>true</code>を返します。</p>
+  <div class="markdown level1 summary"><p>如果游戏结束理由被覆盖则返回<code>true</code>。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -305,8 +305,8 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>乗っ取りの末に実際に至るエンディングの終了理由。
-乗っ取りが起こらない場合は<a class="xref" href="Virial.Events.Game.EndCriteriaMetEvent.html#Virial_Events_Game_EndCriteriaMetEvent_EndReason">EndReason</a>と同じものが返ります。</p>
+  <div class="markdown level1 summary"><p>经过劫持后实际到达的结局的结束理由。
+如果未发生劫持，则返回与<a class="xref" href="Virial.Events.Game.EndCriteriaMetEvent.html#Virial_Events_Game_EndCriteriaMetEvent_EndReason">EndReason</a>相同的内容。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -338,8 +338,8 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>乗っ取りの末に実際に至るエンディング。
-乗っ取りが起こらない場合は<a class="xref" href="Virial.Events.Game.EndCriteriaMetEvent.html#Virial_Events_Game_EndCriteriaMetEvent_GameEnd">GameEnd</a>と同じものが返ります。</p>
+  <div class="markdown level1 summary"><p>经过劫持后实际到达的结局。
+如果未发生劫持，则返回与<a class="xref" href="Virial.Events.Game.EndCriteriaMetEvent.html#Virial_Events_Game_EndCriteriaMetEvent_GameEnd">GameEnd</a>相同的内容。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -371,7 +371,7 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>現在の勝者。</p>
+  <div class="markdown level1 summary"><p>当前的胜者。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -449,8 +449,8 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <a class="header-action link-secondary" title="View source" href="https://github.com/Dolly1016/Nebula-Public/blob/master/NebulaAPI/Events/Game/EndCriteriaMetEvent.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>ゲーム終了理由の上書きを試行します。
-ゲーム終了理由の優先度によって上書きできない場合があります。</p>
+  <div class="markdown level1 summary"><p>尝试覆盖游戏结束理由。
+根据游戏结束理由的优先级，可能无法覆盖。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -461,13 +461,13 @@ Class EndCriteriaMetEvent  <a class="header-action link-secondary" title="View s
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>end</code> <a class="xref" href="Virial.Game.GameEnd.html">GameEnd</a></dt>
-    <dd><p>上書きするゲーム終了。</p>
+    <dd><p>要覆盖的游戏结束。</p>
 </dd>
     <dt><code>reason</code> <a class="xref" href="Virial.Game.GameEndReason.html">GameEndReason</a></dt>
-    <dd><p>ゲーム終了理由。</p>
+    <dd><p>游戏结束理由。</p>
 </dd>
     <dt><code>preWinners</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>上書き時の勝者マスク。これ以外でもプレイヤーは役職やモディファイア等の都合で勝利できます。</p>
+    <dd><p>覆盖时的胜者掩码。除此之外，玩家也可以因角色或Modifier等原因获胜。</p>
 </dd>
   </dl>
 

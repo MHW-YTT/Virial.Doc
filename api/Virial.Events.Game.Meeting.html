@@ -96,96 +96,96 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.CalledEmergencyMeetingEvent.html">CalledEmergencyMeetingEvent</a></dt>
-      <dd><p>緊急招集の際に発火するイベントです。</p>
+      <dd><p>在紧急召集时触发的事件。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.CheckCanPushEmergencyButtonEvent.html">CheckCanPushEmergencyButtonEvent</a></dt>
-      <dd><p>緊急会議ボタンが押せるか調べる際に呼び出されます。
-緊急会議をブロックできます。</p>
+      <dd><p>在检查紧急会议按钮是否可按下时调用。
+可以阻止紧急会议。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.ExileScenePreStartEvent.html">ExileScenePreStartEvent</a></dt>
-      <dd><p>追放シーンの開始直前に呼び出されます。
-このとき、追放画面はまだ生成されていません。</p>
+      <dd><p>在驱逐场景即将开始前调用。
+此时，驱逐画面尚未生成。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.ExileSceneStartEvent.html">ExileSceneStartEvent</a></dt>
-      <dd><p>追放シーンの開始時に呼び出されます。
-会議画面と追放画面の両方にアクセスできます。</p>
+      <dd><p>在驱逐场景开始时调用。
+可以同时访问会议画面和驱逐画面。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.FixExileTextEvent.html">FixExileTextEvent</a></dt>
-      <dd><p>追放テキストを決定するために呼び出されます。</p>
+      <dd><p>用于确定驱逐文本时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingEndEvent.html">MeetingEndEvent</a></dt>
-      <dd><p>会議終了時に呼び出されます。
-プレイヤーはすでに追放されています。</p>
+      <dd><p>会议结束时调用。
+玩家已被驱逐。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingPreEndEvent.html">MeetingPreEndEvent</a></dt>
-      <dd><p>会議終了時、追加追放者を含むプレイヤーが全員追放された後で呼び出されます。
-このイベントで登録されたコルーチンを全クライアントが実行しきった後、<a class="xref" href="Virial.Events.Game.Meeting.MeetingEndEvent.html">MeetingEndEvent</a>が呼び出されます。</p>
+      <dd><p>会议结束时，在包含追加驱逐者在内的所有玩家被驱逐后调用。
+所有客户端执行完此事件注册的协程后，会调用<a class="xref" href="Virial.Events.Game.Meeting.MeetingEndEvent.html">MeetingEndEvent</a>。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingPreStartEvent.html">MeetingPreStartEvent</a></dt>
-      <dd><p>会議の開始の要求が受け入れられた時点(レポート/緊急招集の瞬間)で呼び出されます。
-<a class="xref" href="Virial.Events.Game.Meeting.MeetingStartEvent.html">MeetingStartEvent</a>より先行して呼び出されます。</p>
+      <dd><p>在会议开始请求被接受时（报告/紧急召集的瞬间）调用。
+在<a class="xref" href="Virial.Events.Game.Meeting.MeetingStartEvent.html">MeetingStartEvent</a>之前调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingPreSyncEvent.html">MeetingPreSyncEvent</a></dt>
-      <dd><p>会議終了時、追加追放者を決定するルーチンの直前で呼び出されます。
-<a class="xref" href="Virial.Events.Player.PlayerExiledEvent.html">PlayerExiledEvent</a>が発火するより前に呼び出されますが、他クライアントの<a class="xref" href="Virial.Events.Player.PlayerExiledEvent.html">PlayerExiledEvent</a>/&gt;発火によって呼び出されたRPCは呼び出されている可能性があります。</p>
+      <dd><p>在会议结束时，确定追加驱逐者的例行程序之前调用。
+在<a class="xref" href="Virial.Events.Player.PlayerExiledEvent.html">PlayerExiledEvent</a>触发之前调用，但可能其他客户端的<a class="xref" href="Virial.Events.Player.PlayerExiledEvent.html">PlayerExiledEvent</a>/&gt;触发所调用的RPC已被调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingStartEvent.html">MeetingStartEvent</a></dt>
-      <dd><p>緊急会議開始時に呼び出されます。</p>
+      <dd><p>在紧急会议开始时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingTieVoteHostEvent.html">MeetingTieVoteHostEvent</a></dt>
-      <dd><p>タイ投票が発生したときに発火します。
-追加票を投じさせられます。追加票を投じた後の投票結果がタイ投票であっても、このイベントは発火しません。</p>
+      <dd><p>平局投票发生时触发。
+允许投附加票。即使投附加票后的投票结果仍是平局，此事件也不会再次触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.MeetingVoteEndEvent.html">MeetingVoteEndEvent</a></dt>
-      <dd><p>投票終了時に発火します。</p>
+      <dd><p>投票结束时触发。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.PlayerVoteCastEvent.html">PlayerVoteCastEvent</a></dt>
-      <dd><p>投票時に呼び出されます。</p>
+      <dd><p>投票时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.PlayerVoteCastLocalEvent.html">PlayerVoteCastLocalEvent</a></dt>
-      <dd><p>投票時に呼び出されます。</p>
+      <dd><p>投票时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.PlayerVoteDisclosedLocalEvent.html">PlayerVoteDisclosedLocalEvent</a></dt>
-      <dd><p>投票が開示されたときに呼び出されます。</p>
+      <dd><p>投票结果公开时调用。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.PlayerVotedLocalEvent.html">PlayerVotedLocalEvent</a></dt>
-      <dd><p>投票結果の開示時に呼び出されます。
-このイベントによって、誰が自身に票を投じたか知ることができます。</p>
+      <dd><p>投票结果公开时调用。
+通过此事件可以知道谁给自己投了票。</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Virial.Events.Game.Meeting.ReportDeadBodyEvent.html">ReportDeadBodyEvent</a></dt>
-      <dd><p>死体が通報されると発火するイベントです。</p>
+      <dd><p>报告尸体时触发的事件。</p>
 </dd>
     </dl>
 
