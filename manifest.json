@@ -348,7 +348,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Virial.Assignable.DefinedCategorizedAssignable",
-      "Summary": "<p sourcefile=\"api/Virial.Assignable.DefinedCategorizedAssignable.yml\" sourcestartlinenumber=\"1\">职业类别で分類される职业の定义を表示。。\n船员职业・内鬼职业・第三阵营职业が該当します。</p>\n"
+      "Summary": "<p sourcefile=\"api/Virial.Assignable.DefinedCategorizedAssignable.yml\" sourcestartlinenumber=\"1\">职业类别で分類される职业の定义を表示。。\n船员职业・伪装者职业・第三阵营职业が該当します。</p>\n"
     },
     {
       "type": "ManagedReference",
